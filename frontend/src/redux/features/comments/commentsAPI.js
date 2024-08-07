@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 export const commentsApi = createApi({
     reducerPath: 'commentsApi',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://localhost:4000/api/comments',
+        baseUrl: 'https://zhang-blog.onrender.com/api/comments',
         credentials: "include"
     }),
     tagTypes: ['Comments'],

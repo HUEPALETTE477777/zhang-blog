@@ -53,7 +53,7 @@ const EditPost = () => {
             class: ImageTool,
             config: {
               endpoints: {
-                byFile: 'http://localhost:4000/api/images/upload',
+                byFile: 'https://zhang-blog.onrender.com/api/images/upload',
               },
             },
           },
@@ -107,7 +107,7 @@ const EditPost = () => {
       const form_data = new FormData();
       form_data.append('image', file);
       try {
-        const response = await fetch('http://localhost:4000/api/images/upload', {
+        const response = await fetch('https://zhang-blog.onrender.com/api/images/upload', {
           method: 'POST',
           body: form_data,
         });

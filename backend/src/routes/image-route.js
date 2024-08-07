@@ -32,7 +32,7 @@ router.post('/upload', upload.single('image'), async (req, res) => {
             .resize({ width: 800, fit: 'inside' })
             .toFile(filePath);
 
-        const imageUrl = `http://localhost:4000/api/uploads/${fileName}`;
+        const imageUrl = `https://zhang-blog.onrender.com/api/uploads/${fileName}`;
 
         res.status(200).json({
             success: 1,
