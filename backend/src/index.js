@@ -19,7 +19,7 @@ app.use(cookieParser());
 app.use(bodyParser.json({ limit: '20mb' }));
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
 app.use(cors({
-    origin: process.env.CLIENT_URL || 'http://localhost:5173',
+    origin: 'https://zhang-blog-psi.vercel.app',
     credentials: true
 }));
 
