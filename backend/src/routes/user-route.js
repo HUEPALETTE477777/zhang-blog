@@ -31,7 +31,7 @@ router.post('/login', async(req, res) => {
         res.cookie("token", token, {
             httpOnly: true, // ONLY WORKS WHEN WE HAVE 'https://'
             secure: process.env.NODE_ENV === 'production',
-            sameSite: true
+            sameSite: 'None'
         })
 
         res.status(200).send({message: "Login Successful", token, user: {
